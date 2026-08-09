@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "garudata"
+version = "0.1.0"
+description = "Lean geodata-mimic for the GARUDA model: ERA5 -> PV/wind CF -> land suitability -> siting, Indonesia-first"
+readme = "garudata/README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }  # turbine/panel parameters extracted from geodata (GPL-3.0)
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "xarray>=2024.1",
+    "dask",
+    "netcdf4",
+    "rasterio>=1.3",
+    "geopandas>=0.14",
+    "shapely>=2.0",
+    "pyproj>=3.5",
+    "cdsapi>=0.7",
+]
+
+[project.optional-dependencies]
+poa = ["pvlib>=0.11"]      # plane-of-array PV model (convert.pv_cf_poa)
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["garudata", "garudata.profiles"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

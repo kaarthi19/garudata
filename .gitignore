@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+.venv/
+
+# test scratch artifacts (written next to the tests)
+tests/_synth_*.tif
+tests/_writer_out/
+
+# real-data validation store + outputs (re-downloadable; report is committed)
+validation/store/
+validation/out/
+
+# analysis outputs
+captive_potential_*.csv
+
+# personal reference docs — deliberately untracked (kept local only)
+GEODATA_WORK_PLAN.md
+geodata_workflow_plan.md
+upstream/INDEX.md
+
+# personal validation report + local data layers (never commit)
+validation/REPORT_*.md
+landcover_suitability.tif
+*.DS_Store
+
+# notebook scratch (regenerable)
+example_notebooks/_out/
+example_notebooks/_build/
+
+# upstream PR/issue/review drafts — personal, submitted by hand (never commit)
+upstream/
