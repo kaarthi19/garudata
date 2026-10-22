@@ -1,6 +1,6 @@
 # garudata
 
-A lean, modern-stack geodata-mimic for the [GARUDA](https://github.com/kaarthi19/garuda) model.
+A lean, modern-stack geodata-mimic for the [GARUDA](https://github.com/Power-Lab/garuda) model.
 It covers the slice of geodata the lab actually uses — ERA5 download → cutout → PV/wind capacity
 factors → land suitability → per-facility/per-village siting → GARUDA CSV artifacts — with the
 30 verified upstream defects designed out (each documented with file:line evidence during the

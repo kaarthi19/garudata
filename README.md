@@ -1,7 +1,7 @@
 # garudata
 
 A lean, modern-stack renewable-resource toolkit built for the
-[GARUDA](https://github.com/kaarthi19/garuda) Indonesia energy-planning model, grown out of a
+[GARUDA](https://github.com/Power-Lab/garuda) Indonesia energy-planning model, grown out of a
 verified audit of the lab's [geodata](https://github.com/GeodataTools/geodata) package.
 
 ## Start here
